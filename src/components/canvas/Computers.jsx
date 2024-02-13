@@ -15,15 +15,15 @@ const Computers = ({ isMobile }) => {
         angle={0.12}
         penumbra={1}
         intensity={1}
-        castShadow={isMobile ? false : true} // Disable shadow casting on mobile
-        shadow-mapSize-width={isMobile ? 256 : 1024} // Lower resolution for mobile
+        castShadow={isMobile ? false : true} 
+        shadow-mapSize-width={isMobile ? 256 : 1024} 
         shadow-mapSize-height={isMobile ? 256 : 1024}
       />
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.9 : 1.75}
-        position={isMobile ? [0, -2, -1.0] : [0, -3.25, -0.5]}
+        position={isMobile ? [0, -2, -0.5] : [0, -3.25, -0.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>

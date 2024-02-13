@@ -41,7 +41,6 @@ const BallCanvas = ({ icon }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check if the device is mobile
     const mediaQuery = window.matchMedia("(max-width: 768px)");
     setIsMobile(mediaQuery.matches);
 
@@ -60,7 +59,7 @@ const BallCanvas = ({ icon }) => {
     <Canvas
       frameloop='demand'
       shadows
-      dpr={isMobile ? 1 : 2} // Lower dpr for mobile devices
+      dpr={isMobile ? 1 : 2} 
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
