@@ -7,16 +7,6 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
-  const { scene, error } = useGLTF("./desktop_pc/scene.gltf");
-
-if (error) {
-  return <div>Error loading model</div>;
-}
-
-if (!scene) {
-  return <CanvasLoader />;
-}
-
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
@@ -25,8 +15,9 @@ if (!scene) {
         angle={0.12}
         penumbra={1}
         intensity={1}
-        castShadow
-        shadow-mapSize={1024}
+        castShadow={isMobile ? false : true} // Disable shadow casting on mobile
+        shadow-mapSize-width={isMobile ? 512 : 1024} // Lower resolution for mobile
+        shadow-mapSize-height={isMobile ? 512 : 1024}
       />
       <pointLight intensity={1} />
       <primitive
