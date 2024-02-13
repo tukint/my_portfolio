@@ -50,7 +50,7 @@ const About = () => {
         I am a skilled software developer with experience in JavaScript, specializing in frameworks such as React and Node.js. I am a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that address real-world problems. Let's work together to bring your ideas to life.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='  justify-center mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
