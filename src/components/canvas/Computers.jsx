@@ -16,8 +16,8 @@ const Computers = ({ isMobile }) => {
         penumbra={1}
         intensity={1}
         castShadow={isMobile ? false : true} // Disable shadow casting on mobile
-        shadow-mapSize-width={isMobile ? 512 : 1024} // Lower resolution for mobile
-        shadow-mapSize-height={isMobile ? 512 : 1024}
+        shadow-mapSize-width={isMobile ? 256 : 1024} // Lower resolution for mobile
+        shadow-mapSize-height={isMobile ? 256 : 1024}
       />
       <pointLight intensity={1} />
       <primitive
