@@ -148,7 +148,7 @@ const experiences = [
     company_name: "MIGDAL INSURANCE",
     icon: migdal,
     iconBg: "#E6DEDD",
-    date: "Aug 2018 - Dec 2020",
+    date: "Aug 2018 - Dec 2019",
     points: [
       "Lead and supervise the new website development project.",
       "Handles the role of defining various requirements, systems analysis, writing specifications, and documenting requirements.",
