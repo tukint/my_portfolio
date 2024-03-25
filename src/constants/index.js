@@ -240,7 +240,7 @@ const projects = [
     source_code_link: "https://marvel-app-blond.vercel.app/",
   },
   {
-    name: "Credit application",
+    name: "Credit Request",
     description:
       "The projects integrate seamlessly with Salesforce on AMPA Capital's website, simplifying loan request processing with a user-friendly interface.",
     tags: [
